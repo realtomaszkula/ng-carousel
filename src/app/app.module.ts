@@ -18,6 +18,7 @@ import { CarouselWithDescriptionComponent } from './carousel/carousel-with-descr
     MatButtonModule,
     MatToolbarModule,
     RouterModule.forRoot([
+      { path: '', redirectTo: 'with-autoplay', pathMatch: 'full' },
       { path: 'with-autoplay', component: CarouselWithAutoplayComponent },
       { path: 'with-description', component: CarouselWithDescriptionComponent },
       { path: 'with-buttons', component: CarouselWithButtonsComponent }
